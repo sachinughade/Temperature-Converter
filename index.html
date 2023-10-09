@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Temperature Converter</h1>
+
+    <div class="converter">
+      
+      <label for="temperature">Enter Temperature:</label>
+      <input type="text" id="temperature" placeholder="Enter temperature" />
+
+      <div class="wrapper">
+        <div class="scales">
+          <input
+            checked=""
+            value="celsius"
+            name="btn"
+            type="radio"
+            class="scale_input first"
+          />
+          <div class="btn">
+            <span class="span">Celsius</span>
+          </div>
+        </div>
+        <div class="scales">
+          <input
+            value="fahrenheit"
+            name="btn"
+            type="radio"
+            class="scale_input first"
+          />
+          <div class="btn">
+            <span class="span">Fahrenheit</span>
+          </div>
+        </div>
+        <div class="scales">
+          <input
+            value="kelvin"
+            name="btn"
+            type="radio"
+            class="scale_input first"
+          />
+          <div class="btn">
+            <span class="span">Kelvin</span>
+          </div>
+        </div>
+      </div>
+
+      <span id="to">TO</span>
+
+      <div class="wrapper">
+        <div class="scales">
+          <input
+            checked=""
+            value="celsius"
+            name="btn2"
+            type="radio"
+            class="scale_input second"
+          />
+          <div class="btn">
+            <span class="span">Celsius</span>
+          </div>
+        </div>
+        <div class="scales">
+          <input
+            value="fahrenheit"
+            name="btn2"
+            type="radio"
+            class="scale_input second"
+          />
+          <div class="btn">
+            <span class="span"> Fahrenheit </span>
+          </div>
+        </div>
+        <div class="scales">
+          <input
+            value="kelvin"
+            name="btn2"
+            type="radio"
+            class="scale_input second"
+          />
+          <div class="btn">
+            <span class="span">Kelvin</span>
+          </div>
+        </div>
+      </div>
+
+      <button id="convert">Convert</button>
+
+      <p id="result"></p>
+      <div class="result">
+        <p id="conversionResult"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
